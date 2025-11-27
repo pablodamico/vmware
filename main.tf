@@ -28,7 +28,7 @@ resource "vsphere_virtual_machine" "vm" {
 	resource_pool_id		= data.vsphere_host.host.resource_pool_id
   num_cpus         = var.vm_cpus
   memory           = var.vm_memory
-  guest_id						= "ubuntu64Guest"
+  guest_id						= "other3xLinux64Guest"
   firmware = "efi"
   network_interface {
       network_id = data.vsphere_network.network.id
